@@ -21,13 +21,14 @@ missing.to_csv("sold_missing_report.csv", index=False)
 numeric_cols = ["ClosePrice", "LivingArea", "DaysOnMarket"]
 summary = sold[numeric_cols].apply(pd.to_numeric, errors="coerce").describe(
     percentiles=[0.01, 0.05, 0.25, 0.5, 0.75, 0.95, 0.99]
+
 )
 summary.to_csv("sold_numeric_summary.csv")
 
 
 
 # Result:
-# (639941, 82)
+# (665539, 82)
 # BuyerAgentAOR                       str
 # ListAgentAOR                        str
 # Flooring                            str
@@ -41,12 +42,12 @@ summary.to_csv("sold_numeric_summary.csv")
 # BuyerAgencyCompensation         float64
 # Length: 82, dtype: object
 # PropertyType
-# Residential            430462
-# ResidentialLease       146570
-# Land                    20728
-# ManufacturedInPark      17326
-# ResidentialIncome       17134
-# CommercialSale           3981
-# CommercialLease          3320
-# BusinessOpportunity       420
+# Residential            448045
+# ResidentialLease       152250
+# Land                    21446
+# ManufacturedInPark      17955
+# ResidentialIncome       17831
+# CommercialSale           4121
+# CommercialLease          3453
+# BusinessOpportunity       438
 # Name: count, dtype: int64

@@ -14,7 +14,7 @@ print('Filtered row count of Sold is '+ str(fi_sold.shape[0]))
 print('Filtered row count of Listings is '+ str(fi_listings.shape[0]))
 
 # Result:
-# Unfiltered row count of Sold is 639941
-# Unfiltered row count of Listings is 929339
-# Filtered row count of Sold is 430462
-# Filtered row count of Listings is 591332
+# Unfiltered row count of Sold is 665539
+# Unfiltered row count of Listings is 966831
+# Filtered row count of Sold is 448045
+# Filtered row count of Listings is 615496

@@ -14,11 +14,11 @@ location = r'D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_raw_data\\'
 
 print(location + soldName + monthList[0])
 
-sold1 = pd.read_csv("D:\Data&Documents\Berkeley\Internship\IDX Exchange\Sold_concated.csv", encoding='latin-1', low_memory=False)
-sold2 = pd.read_csv("D:\Data&Documents\Berkeley\Internship\IDX Exchange\CRMLSSold202605.csv", encoding='latin-1', low_memory=False)
+sold1 = pd.read_csv("D:/Data&Documents/Berkeley/Internship/IDX Exchange/Sold_concated.csv", encoding='latin-1', low_memory=False)
+sold2 = pd.read_csv("D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\IDX_NewDataPulling\CRMLSSold202606.csv", encoding='latin-1', low_memory=False)
 sold = pd.concat([sold1, sold2])
-list1 = pd.read_csv("D:\Data&Documents\Berkeley\Internship\IDX Exchange\Listing_concated.csv", encoding='latin-1', low_memory=False)
-list2 = pd.read_csv("D:\Data&Documents\Berkeley\Internship\IDX Exchange\CRMLSListing202605.csv", encoding='latin-1', low_memory=False)
+list1 = pd.read_csv("D:/Data&Documents/Berkeley/Internship/IDX Exchange/Listing_concated.csv", encoding='latin-1', low_memory=False)
+list2 = pd.read_csv("D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\IDX_NewDataPulling\CRMLSListing202606.csv", encoding='latin-1', low_memory=False)
 listing = pd.concat([list1, list2])
 
 sold.to_csv('Sold_Concated.csv',index = False, encoding='latin-1')
