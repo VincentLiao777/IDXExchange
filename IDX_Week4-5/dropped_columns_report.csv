@@ -1,0 +1,25 @@
+column,reason,missing_pct
+WaterfrontYN,more than 90% missing and not a core field,0.9994350443775647
+BasementYN,more than 90% missing and not a core field,0.9834720429606679
+FireplacesTotal,more than 90% missing and not a core field,1.0
+AboveGradeFinishedArea,more than 90% missing and not a core field,1.0
+TaxAnnualAmount,more than 90% missing and not a core field,0.9958304472014412
+BuilderName,more than 90% missing and not a core field,0.9619075666489868
+TaxYear,more than 90% missing and not a core field,0.9993749427156035
+ElementarySchoolDistrict,more than 90% missing and not a core field,1.0
+CoBuyerAgentFirstName,more than 90% missing and not a core field,0.9180558915405408
+BelowGradeFinishedArea,more than 90% missing and not a core field,0.9954983855191055
+BusinessType,more than 90% missing and not a core field,0.9972984302948438
+CoveredSpaces,more than 90% missing and not a core field,1.0
+LotSizeDimensions,more than 90% missing and not a core field,0.9472247306318637
+MiddleOrJuniorSchoolDistrict,more than 90% missing and not a core field,1.0
+UnparsedAddress,not needed for aggregate market analysis or privacy/metadata field,0.001595699125070056
+StreetNumberNumeric,not needed for aggregate market analysis or privacy/metadata field,0.0025272748854687703
+ListAgentEmail,not needed for aggregate market analysis or privacy/metadata field,0.07711043229622908
+OriginatingSystemName,not needed for aggregate market analysis or privacy/metadata field,0.7980088319392252
+OriginatingSystemSubName,not needed for aggregate market analysis or privacy/metadata field,0.7980088319392252
+BuyerAgencyCompensation,not needed for aggregate market analysis or privacy/metadata field,0.8981577338067341
+BuyerAgencyCompensationType,not needed for aggregate market analysis or privacy/metadata field,0.8982073176778521
+CoListAgentFirstName,not needed for aggregate market analysis or privacy/metadata field,0.7928536118845027
+CoListAgentLastName,not needed for aggregate market analysis or privacy/metadata field,0.792420879918382
+CoListOfficeName,not needed for aggregate market analysis or privacy/metadata field,0.7855978387442358

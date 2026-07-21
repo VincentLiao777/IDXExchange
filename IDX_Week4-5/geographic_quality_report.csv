@@ -1,0 +1,6 @@
+geo_check,issue_count,issue_pct
+missing_coordinates_flag,19792,0.029738302338405413
+zero_coordinates_flag,57,8.564486829472052e-05
+longitude_positive_flag,66,9.916774223599219e-05
+implausible_ca_coordinates_flag,208,0.0003125286421982784
+invalid_coordinates_flag,20000,0.030050830980603693

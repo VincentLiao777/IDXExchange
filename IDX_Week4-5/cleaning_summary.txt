@@ -1,0 +1,47 @@
+IDX Week 4-5 Data Cleaning Summary
+========================================
+
+Input file: D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\IDX_Week3\sold_residential_with_mortgage_rates.csv
+
+Row counts:
+Initial rows: 665539
+Rows removed from analysis-ready dataset: 136950
+Final cleaned rows: 528589
+Geo-valid rows: 510051
+
+Column counts:
+Initial columns: 84
+Dropped columns: 24
+Final cleaned columns: 82
+
+Cleaning choices:
+- Date columns were converted to datetime.
+- Numeric columns were converted to numeric.
+- Categorical missing values were filled as Unknown.
+- Core numeric fields were not mean/median-imputed.
+- Rows with invalid ClosePrice, LivingArea, DaysOnMarket, date timeline, or status were removed from the analysis-ready dataset.
+- Bad coordinates were flagged. They were not removed from the main cleaned dataset, but a separate geo-valid dataset was saved.
+- Extreme outliers were not removed here because IQR outlier filtering belongs to Week 7.
+
+Flag counts:
+- missing_listing_contract_date_flag: 95871 (14.41%)
+- missing_close_date_flag: 95793 (14.39%)
+- ContractStatusChangeDate_parse_failed_flag: 95793 (14.39%)
+- ListingContractDate_parse_failed_flag: 95778 (14.39%)
+- PurchaseContractDate_parse_failed_flag: 93777 (14.09%)
+- invalid_living_area_flag: 47031 (7.07%)
+- invalid_coordinates_flag: 20000 (3.01%)
+- missing_coordinates_flag: 19792 (2.97%)
+- negative_timeline_flag: 680 (0.10%)
+- purchase_before_listing_flag: 371 (0.06%)
+- purchase_after_close_flag: 303 (0.05%)
+- implausible_ca_coordinates_flag: 208 (0.03%)
+- listing_after_close_flag: 106 (0.02%)
+- longitude_positive_flag: 66 (0.01%)
+- invalid_days_on_market_flag: 64 (0.01%)
+- zero_coordinates_flag: 57 (0.01%)
+- invalid_close_price_flag: 45 (0.01%)
+- CloseDate_parse_failed_flag: 0 (0.00%)
+- invalid_bathrooms_flag: 0 (0.00%)
+- invalid_bedrooms_flag: 0 (0.00%)
+- sold_status_not_closed_flag: 0 (0.00%)
