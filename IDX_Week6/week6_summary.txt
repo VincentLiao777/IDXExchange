@@ -1,0 +1,60 @@
+IDX Week 6 Feature Engineering Summary
+=============================================
+
+Input file: D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\IDX_Week4-5/sold_cleaned_analysis_ready.csv
+Rows in engineered dataset: 528589
+Columns in engineered dataset: 101
+
+Engineered columns created:
+- price_ratio = ClosePrice / OriginalListPrice
+- close_to_original_list_ratio = ClosePrice / OriginalListPrice
+- close_to_list_ratio = ClosePrice / ListPrice
+- price_per_sqft = ClosePrice / LivingArea
+- days_on_market_metric = DaysOnMarket
+- close_year, close_month, close_quarter, yrmo from CloseDate
+- listing_to_contract_days = PurchaseContractDate - ListingContractDate
+- contract_to_close_days = CloseDate - PurchaseContractDate
+
+Output tables:
+- sold_week6_engineered.csv
+- sample_engineered_columns.csv
+- segment_by_property_type.csv
+- segment_by_county.csv
+- segment_by_listing_office_top100.csv
+- segment_by_buyer_office_top100.csv
+- monthly_market_summary.csv
+
+Feature quality flags:
+- CloseDate_parse_failed_flag: 0 (0.00%)
+- PurchaseContractDate_parse_failed_flag: 0 (0.00%)
+- ListingContractDate_parse_failed_flag: 0 (0.00%)
+- ContractStatusChangeDate_parse_failed_flag: 0 (0.00%)
+- invalid_close_price_flag: 0 (0.00%)
+- invalid_living_area_flag: 0 (0.00%)
+- invalid_days_on_market_flag: 0 (0.00%)
+- invalid_bedrooms_flag: 0 (0.00%)
+- invalid_bathrooms_flag: 0 (0.00%)
+- missing_close_date_flag: 0 (0.00%)
+- missing_listing_contract_date_flag: 0 (0.00%)
+- listing_after_close_flag: 0 (0.00%)
+- purchase_after_close_flag: 0 (0.00%)
+- purchase_before_listing_flag: 0 (0.00%)
+- negative_timeline_flag: 0 (0.00%)
+- missing_coordinates_flag: 18392 (3.48%)
+- zero_coordinates_flag: 46 (0.01%)
+- longitude_positive_flag: 40 (0.01%)
+- implausible_ca_coordinates_flag: 146 (0.03%)
+- invalid_coordinates_flag: 18538 (3.51%)
+- sold_status_not_closed_flag: 0 (0.00%)
+- missing_price_ratio_flag: 599 (0.11%)
+- missing_price_per_sqft_flag: 0 (0.00%)
+- missing_listing_to_contract_days_flag: 10713 (2.03%)
+- missing_contract_to_close_days_flag: 10713 (2.03%)
+- suspicious_price_ratio_flag: 925 (0.17%)
+- suspicious_price_per_sqft_flag: 57 (0.01%)
+- negative_listing_to_contract_days_flag: 0 (0.00%)
+- negative_contract_to_close_days_flag: 0 (0.00%)
+
+School district note:
+School district enrichment requires a boundary file and spatial join.
+This pandas-only script keeps the workflow simple and writes school_district_note.txt.
