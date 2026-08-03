@@ -4,4 +4,6 @@ IDX_Week3/sold_residential_with_mortgage_rates.csv
 IDX_Week4-5/sold_cleaned_analysis_ready.csv
 IDX_Week4-5/sold_flagged_full.csv
 IDX_Week4-5/sold_geo_valid.csv
-IDX_Week6\sold_week6_engineered.csv
+IDX_Week6/sold_week6_engineered.csv
+IDX_Week7/sold_week7_clean_filtered.csv
+IDX_Week7/sold_week7_full_flagged.csv
