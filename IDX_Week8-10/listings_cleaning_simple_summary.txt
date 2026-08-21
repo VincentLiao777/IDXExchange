@@ -1,0 +1,21 @@
+Simple Listing Cleaning Summary
+===================================
+
+Input file: D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Listing_Concated.csv
+Output file: D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\IDX_Week8-10\listings_cleaned_for_tableau.csv
+
+Initial rows: 966831
+Rows after cleaning: 615496
+Initial columns: 84
+Dropped columns: 21
+
+Main cleaning choices:
+- Filtered to PropertyType == Residential when PropertyType exists.
+- Converted important date fields to datetime.
+- Converted important price/size/DOM fields to numeric.
+- Filled missing categorical labels with Unknown.
+- Created listing_year, listing_month, listing_quarter, listing_yrmo from ListingContractDate.
+- Flagged invalid list price, living area, DOM, bedrooms/bathrooms, and coordinates.
+- Dropped >90% missing non-core columns and unnecessary address/contact/metadata fields.
+- Removed records missing ListingContractDate or ListingKey.
+- Did not require ClosePrice or CloseDate because listings include active, pending, expired, and withdrawn records.
