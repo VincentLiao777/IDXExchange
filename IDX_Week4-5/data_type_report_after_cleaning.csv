@@ -57,6 +57,7 @@ HighSchoolDistrict,str
 PostalCode,string
 AssociationFee,float64
 LotSizeSquareFeet,float64
+source_month,int64
 year_month,str
 rate_30yr_fixed,float64
 CloseDate_parse_failed_flag,bool

@@ -3,8 +3,8 @@
 
 import pandas as pd
 
-sold = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Sold_Concated.csv", low_memory=False, encoding = 'latin1')
-listings = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Listing_Concated.csv", low_memory=False, encoding = 'latin1')
+sold = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Sold_Concated_FIXED.csv", low_memory=False, encoding = 'latin1')
+listings = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Listing_Concated_FIXED.csv", low_memory=False, encoding = 'latin1')
 url = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MORTGAGE30US"
 
 mortgage = pd.read_csv(url, parse_dates=["observation_date"])

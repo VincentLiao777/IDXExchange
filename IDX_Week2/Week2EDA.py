@@ -1,7 +1,7 @@
 import pandas as pd
 
-sold = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Sold_Concated.csv", low_memory=False, encoding = 'latin1')
-listings = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Listing_Concated.csv", low_memory=False, encoding = 'latin1')
+sold = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Sold_Concated_FIXED.csv", low_memory=False, encoding = 'latin1')
+listings = pd.read_csv(r"D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\Listing_Concated_FIXED.csv", low_memory=False, encoding = 'latin1')
 
 print(sold.shape)
 print(sold.dtypes)

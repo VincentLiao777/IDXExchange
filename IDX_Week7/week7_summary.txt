@@ -4,9 +4,9 @@ IDX Week 7 Outlier Detection and Data Quality Summary
 Input file: D:\Data&Documents\Berkeley\Internship\IDX Exchange\IDX_Codes\IDX_Week6\sold_week6_engineered.csv
 
 Dataset size:
-Rows before filtering: 528589
-Rows removed by required-field IQR filter: 71324 (13.49%)
-Rows after filtering: 457265
+Rows before filtering: 504684
+Rows removed by required-field IQR filter: 68271 (13.53%)
+Rows after filtering: 436413
 
 IQR fields:
 - Required fields used for filtering: ClosePrice, LivingArea, DaysOnMarket
@@ -19,19 +19,19 @@ Why flag first:
 
 Before / after median comparison:
 - ClosePrice: median before = 640,000.00, median after = 615,000.00
-- LivingArea: median before = 1,582.00, median after = 1,520.00
-- DaysOnMarket: median before = 21.00, median after = 19.00
-- price_per_sqft: median before = 414.32, median after = 406.67
+- LivingArea: median before = 1,580.00, median after = 1,519.00
+- DaysOnMarket: median before = 22.00, median after = 19.00
+- price_per_sqft: median before = 414.15, median after = 406.50
 - close_to_original_list_ratio: median before = 1.00, median after = 1.00
 - close_to_list_ratio: median before = 1.00, median after = 1.00
 
 IQR threshold summary:
-- ClosePrice: lower = -1,325,000.00, upper = 2,515,000.00, IQR outliers = 25606 (4.84%)
-- LivingArea: lower = -271.00, upper = 3,609.00, IQR outliers = 24471 (4.63%)
-- DaysOnMarket: lower = -55.50, upper = 116.50, IQR outliers = 36682 (6.94%)
-- price_per_sqft: lower = -717.74, upper = 1,462.90, IQR outliers = 10233 (1.94%)
-- close_to_original_list_ratio: lower = 0.86, upper = 1.09, IQR outliers = 60862 (11.51%)
-- close_to_list_ratio: lower = 0.93, upper = 1.05, IQR outliers = 86357 (16.34%)
+- ClosePrice: lower = -1,325,000.00, upper = 2,507,000.00, IQR outliers = 24440 (4.84%)
+- LivingArea: lower = -268.00, upper = 3,604.00, IQR outliers = 23406 (4.64%)
+- DaysOnMarket: lower = -55.50, upper = 116.50, IQR outliers = 35222 (6.98%)
+- price_per_sqft: lower = -723.50, upper = 1,466.07, IQR outliers = 9651 (1.91%)
+- close_to_original_list_ratio: lower = 0.86, upper = 1.09, IQR outliers = 57834 (11.46%)
+- close_to_list_ratio: lower = 0.93, upper = 1.05, IQR outliers = 82577 (16.36%)
 
 Output files:
 - sold_week7_full_flagged.csv
