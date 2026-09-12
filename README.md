@@ -39,4 +39,7 @@ Competitive Analysis:
 Identifies top listing agents and brokerages by sales volume and transaction count, with geographic views by ZIP code.
 https://public.tableau.com/app/profile/junyu.liao/viz/Competitive_Analysis_17879932879190/Dashboard1
 
+Final 1-page Report:
+Week11-12/1Page_MarketIntelligenceReport_JunyuLiao.docx
+
 P.S. For reasons of file size and information confidentiality, most of original MLS datasets are confidential and are not included in this repo. This repository focuses on the project structure, cleaning scripts, feature engineering workflow, and dashboard preparation process, with final reports and dashboards summerized.
